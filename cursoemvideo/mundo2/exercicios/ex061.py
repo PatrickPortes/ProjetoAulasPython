@@ -1,4 +1,4 @@
-# Progressão Aritmética  V1.0
+# Progressão Aritmética  V2.0
 
 print('='*34)
 print('OS 10 PRIMEIROS TERMOS DE UMA PA:')
@@ -8,8 +8,12 @@ primeirot = int(input('\nQual o Primeiro Termo de uma PA? \n'))
 
 razao = int(input('Qual é a Razão d uma PA? \n'))
 
-decimo = primeirot + (10-1) * razao
+termo = primeirot
 
-for c in range(primeirot, decimo + razao, razao):
-    print('{}'.format(c), end=' -> ')
+cont = 1
+
+while cont <= 10:
+    print('{}'.format(termo), end=' -> ')
+    termo += razao
+    cont += 1
 print('FIM')
